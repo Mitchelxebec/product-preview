@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card-back {
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 120px auto;
+    border-radius: 7px;
+}
+
+.perfume-img img {
+    height: 400px;
+    width: fit-content;
+    border-radius: 7px;
+}
+
+.read {
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+.read>small {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.read>.read-body {
+    height: 199px;
+    margin-top: 5px;
+}
+
+.read>.read-body>h1 {
+    width: 200px;
+    text-align: left;
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.read>.read-body>.write-up {
+    color: hsl(228, 12%, 48%);
+    width: 225px;
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-align: left;
+}
+
+.price {
+    height: 40px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.price>h2 {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.price>small {
+    color: hsl(228, 12%, 48%);
+    margin-left: 19px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    height: 40px;
+    width: 233px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 85px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:990px) {
+    .card-back {
+        height: 625px;
+        width: 83%;
+        margin: 13px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfume-img img {
+        background-image: url(images/image-product-mobile.jpg);
+        height: 280px;
+        width: 100%;
+    }
+
+    .read>.read-body {
+        margin-right: 20px;
+    }
+
+    .read>.read-body>h1 {
+        width: 300px;
+    }
+
+    .read>.read-body>.write-up {
+        width: 265px;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+}
